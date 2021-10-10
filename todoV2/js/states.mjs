@@ -1,4 +1,4 @@
-// state--------
+// state---------
 let todos = [];
 let currentFilter = 'all';
 
