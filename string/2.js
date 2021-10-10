@@ -7,7 +7,10 @@ function solution(newId) {
     .replace(/^$/g, 'a')
     .slice(0, 15)
     .replace(/^\.|\.$/g, '')
-    .replace(/^.{1,2}$/g, match => match + match[match.length - 1].repeat(3 - match.length));
+    .replace(
+      /^.{1,2}$/g,
+      match => match + match[match.length - 1].repeat(3 - match.length)
+    );
 }
 
 console.log(solution('...!@BaT#*..y.abcdefghijklm')); // bat.y.abcdefghi
