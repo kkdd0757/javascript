@@ -49,7 +49,7 @@ $filters.onclick = e => {
   setFilter(e.target.id);
 };
 
-export {
+const Todo = {
   toggleAllTodosCompleted,
   toggleTodosCompleted,
   updateTodoContent,
@@ -58,3 +58,5 @@ export {
   removeAllCompletedTodos,
   fetchTodos
 };
+
+export default Todo;
